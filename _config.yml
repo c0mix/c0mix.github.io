@@ -1,0 +1,42 @@
+# Site settings
+title: Lorenzo Comi
+description: 'IT Security Consultant'
+url: 'http://c0mix.github.io'
+baseurl: ''
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Lorenzo Comi'
+  email: lorenzo.comi93@gmail.com
+  twitter_username: Th3Ch3mist
+  github_username:  c0mix
+  linkedin_username:  lorenzo-comi-53b94789
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
