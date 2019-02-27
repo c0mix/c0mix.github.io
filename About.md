@@ -18,7 +18,7 @@ In my career I have managed to achive some important milestones such as:
 You read all the way to here? Incredible! Then maybe you are also interested in checking out my [Blog][blog], or maybe even following me on [Twitter][twitter].
 
 [blog]:     https://c0mix.github.io/#blog
-[disc]:     https://c0mix.github.io/disclosure/
+[disc]:     https://c0mix.github.io/Disclosure/
 [twitter]:	http://twitter.com/Th3Ch3mist
 [isecom]:	http://www.isecom.org/research/
 [uni]:		http://www.cosp.unimi.it/offerta_didattica/F2Y.htm
