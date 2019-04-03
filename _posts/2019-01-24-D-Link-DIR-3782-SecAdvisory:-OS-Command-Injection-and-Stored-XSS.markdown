@@ -156,8 +156,8 @@ These vulnerabilities were submitted to the vendor that acknowledged their prese
 - CVE-2018–17990 [OS Command Injection][CVE-2018-17990]
 
 ## References
-- [Pentesting iot][https://blog.mindedsecurity.com/2018/10/pentesting-iot-devices-part-2-dynamic.html]
-- [Firmadyne Tool][https://github.com/firmadyne/firmadyne]
+- [Pentesting iot][Pentesting iot]
+- [Firmadyne Tool][Firmadyne Tool]
 
 [descDlink]:        https://eu.dlink.com/it/it/products/dsl-3782-wireless-ac1200-dual-band-vdsl-adsl-modem-router
 [CVE-2018-8898]:    https://www.exploit-db.com/exploits/44657      
@@ -167,3 +167,5 @@ These vulnerabilities were submitted to the vendor that acknowledged their prese
 [brute]:            https://twitter.com/brutelogic
 [CVE-2018-17989]:   https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17989
 [CVE-2018-17990]:   https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17990
+[Pentesting iot]:	https://blog.mindedsecurity.com/2018/10/pentesting-iot-devices-part-2-dynamic.html
+[Firmadyne Tool]:	https://github.com/firmadyne/firmadyne
