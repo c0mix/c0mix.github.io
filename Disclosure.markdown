@@ -9,7 +9,7 @@ title: Publications & Responsible Disclosure
 | CVE-2018-17989    | A stored XSS vulnerability exists in the web interface on D-Link DSL-3782 A1 1.01 and A1 Wind Infostrada 2.0 devices that allows authenticated attackers to inject a JavaScript or HTML payload inside the ACL page. |   2018-08-26 	| [CVE details][cve2] <br><br> [Technical article][blog2]   |
 | CVE-2018–17990 	| An OS command injection vulnerability in Acl.asp allows a remote authenticated attacker to execute arbitrary OS commands via the ScrIPaddrEndTXT parameter.   |    2018-08-26	| [CVE details][cve3] <br><br> [Technical article][blog2] 	 |
 | C1 	| In this paper we present IoT Security Checker, a solution for IoT security assessment coping with the most relevant IoT security issues. |    2018-12-31	| [dblp][dblp] <br><br> [Article][paper1] 	 |
-
+| Hall of Fame 	| My name was listed inside the Telecom Italia (TIM) Hall of Fame after the responsible disclosure of a SQL injection vulnerability and an XSS | 2018-07-21 	| [TIM Hall of Fame][TIMhof]|
 
 
 [cve1]: https://www.cvedetails.com/cve/CVE-2017-17101/
@@ -19,7 +19,7 @@ title: Publications & Responsible Disclosure
 [blog2]: https://c0mix.github.io/2019/D-Link-DIR-3782-SecAdvisory-OS-Command-Injection-and-Stored-XSS/
 [dblp]:	https://dblp.uni-trier.de/pers/hd/c/Comi:Lorenzo
 [paper1]:	https://link.springer.com/chapter/10.1007%2F978-3-030-10549-5_24
-
+[TIMhof]: https://www.telecomitalia.com/tit/it/footer/responsible-disclosure.html
 
 <style>
 table:nth-of-type(1) {
