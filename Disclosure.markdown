@@ -10,16 +10,19 @@ title: Publications & Responsible Disclosure
 | CVE-2018–17990 	| An OS command injection vulnerability in Acl.asp allows a remote authenticated attacker to execute arbitrary OS commands via the ScrIPaddrEndTXT parameter.   |    2018-08-26	| [CVE details][cve3] <br><br> [Technical article][blog2] 	 |
 | C1 	| In this paper we present IoT Security Checker, a solution for IoT security assessment coping with the most relevant IoT security issues. |    2018-12-31	| [dblp][dblp] <br><br> [Article][paper1] 	 |
 | Hall of Fame 	| My name was listed inside the Telecom Italia (TIM) Hall of Fame after the responsible disclosure of a SQL injection vulnerability and an XSS | 2018-07-21 	| [TIM Hall of Fame][TIMhof]|
+|CVE-2020-9350 |Graph Builder in SAS Visual Analytics 8.5 allows XSS via a graph template that is accessed directly. | 2020-02-23 |[CVE details][cve4] <br><br> [Vendor Advisor][SASadvisory] |
 
 
 [cve1]: https://www.cvedetails.com/cve/CVE-2017-17101/
 [cve2]: https://www.cvedetails.com/cve/CVE-2018-17989/
 [cve3]: https://www.cvedetails.com/cve/CVE-2018-17990/
+[cve4]: https://www.cvedetails.com/cve/CVE-2020-9350/
 [blog1]: http://c0mix.github.io/2018/Break-into-2K-IP-Camera/
 [blog2]: https://c0mix.github.io/2019/D-Link-DIR-3782-SecAdvisory-OS-Command-Injection-and-Stored-XSS/
 [dblp]:	https://dblp.uni-trier.de/pers/hd/c/Comi:Lorenzo
 [paper1]:	https://link.springer.com/chapter/10.1007%2F978-3-030-10549-5_24
 [TIMhof]: https://www.telecomitalia.com/tit/it/footer/responsible-disclosure.html
+[SASadvisory]: http://support.sas.com/kb/65/358.html
 
 <style>
 table:nth-of-type(1) {
