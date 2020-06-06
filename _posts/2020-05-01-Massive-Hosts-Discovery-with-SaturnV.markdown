@@ -238,7 +238,7 @@ The name of this tool wants to honor the magnificent NASA rocket which took men 
 
 > As of 2020, the Saturn V remains the tallest, heaviest, and most powerful rocket ever brought to operational status.
 
-![](https://ourplnt.com/wp-content/uploads/2018/07/Saturn-V-at-Johnson-Space-Center-NASA.jpg)
+![](/images/2020-05-01-Massive-Hosts-Discovery-with-SaturnV/saturn.jpg)
 
 ## References
 - [Masscan](https://github.com/robertdavidgraham/masscan)
