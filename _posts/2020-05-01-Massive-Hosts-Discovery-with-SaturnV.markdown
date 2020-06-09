@@ -77,7 +77,7 @@ needed!)
 
 #### 3. Edit the configuration file with your parameters (at least `bots` and `npt_name` must be set)
 
-	![](/images/2020-05-01-Massive-Hosts-Discovery-with-SaturnV/config.png)
+![](/images/2020-05-01-Massive-Hosts-Discovery-with-SaturnV/config.png)
 
 
 #### 4. Setup your SSH Key (in this case I'm using AWS bots so I've put my private key inside ssh_key folder)
