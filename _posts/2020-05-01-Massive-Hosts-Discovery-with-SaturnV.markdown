@@ -18,7 +18,7 @@ The idea behind SaturnV is simple: I need that my PC uses remote bots to perform
 
 ## Execution Example
 
-In order to provide a small DEMO of this tool I have used some facebook related ip subnets as targets since they are under bug bounty. The following steps will cover all the installation and execution process of the SaturnV tool providing a basic example of its behaviour.
+In order to provide a small DEMO of this tool I used some facebook related ip subnets as targets since they are under bug bounty. The following steps will cover all the installation and execution process of the SaturnV tool providing a basic example of its behaviour.
 
 #### 1. Clone the project from github
 ```
@@ -142,7 +142,7 @@ cat target_subnets.txt
 31.13.92.240/28
 ```
 
-#### 7. Prepare and launch masscan test 
+#### 7. Prepare and execute masscan test 
 ```
 python3 saturnV.py --masscan-script --masscan-run
 ***** Welcome to SaturnV *****
@@ -161,7 +161,7 @@ python3 saturnV.py --check
 15:09:04 | WARNING | masscan execution STARTED on Bot: 3.22.117.16
 ```
 
-#### 8. Wait until the scan is finished on all your bots, the grab the results.
+#### 8. Wait until the scan is finished on all your bots, then grab the results
 ```
 python3 saturnV.py --check
 ***** Welcome to SaturnV *****
