@@ -5,8 +5,8 @@
     <description>IT Security Consultant</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 06 Jun 2020 17:57:34 +0200</pubDate>
-    <lastBuildDate>Sat, 06 Jun 2020 17:57:34 +0200</lastBuildDate>
+    <pubDate>Thu, 11 Feb 2021 19:15:18 +0100</pubDate>
+    <lastBuildDate>Thu, 11 Feb 2021 19:15:18 +0100</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -25,7 +25,7 @@
 
 &lt;h2 id=&quot;execution-example&quot;&gt;Execution Example&lt;/h2&gt;
 
-&lt;p&gt;In order to provide a small DEMO of this tool I have used some facebook related ip subnets as targets since they are under bug bounty. The following steps will cover all the installation and execution process of the SaturnV tool providing a basic example of its behaviour.&lt;/p&gt;
+&lt;p&gt;In order to provide a small DEMO of this tool I used some facebook related ip subnets as targets since they are under bug bounty. The following steps will cover all the installation and execution process of the SaturnV tool providing a basic example of its behaviour.&lt;/p&gt;
 
 &lt;h4 id=&quot;1-clone-the-project-from-github&quot;&gt;1. Clone the project from github&lt;/h4&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/c0mix/SaturnV.git
@@ -82,8 +82,7 @@ needed!)
 
 &lt;h4 id=&quot;3-edit-the-configuration-file-with-your-parameters-at-least-bots-and-npt_name-must-be-set&quot;&gt;3. Edit the configuration file with your parameters (at least &lt;code class=&quot;highlighter-rouge&quot;&gt;bots&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;npt_name&lt;/code&gt; must be set)&lt;/h4&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![](/images/2020-05-01-Massive-Hosts-Discovery-with-SaturnV/config.png)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2020-05-01-Massive-Hosts-Discovery-with-SaturnV/config.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;4-setup-your-ssh-key-in-this-case-im-using-aws-bots-so-ive-put-my-private-key-inside-ssh_key-folder&quot;&gt;4. Setup your SSH Key (in this case I’m using AWS bots so I’ve put my private key inside ssh_key folder)&lt;/h4&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ls -l ssh_key/
@@ -144,7 +143,7 @@ cat target_subnets.txt
 31.13.92.240/28
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;7-prepare-and-launch-masscan-test&quot;&gt;7. Prepare and launch masscan test&lt;/h4&gt;
+&lt;h4 id=&quot;7-prepare-and-execute-masscan-test&quot;&gt;7. Prepare and execute masscan test&lt;/h4&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 saturnV.py --masscan-script --masscan-run
 ***** Welcome to SaturnV *****
 15:08:52 | INFO | SSH private key found in ssh_key folder, the following key will be used: lcomi.pem
@@ -162,7 +161,7 @@ python3 saturnV.py --check
 15:09:04 | WARNING | masscan execution STARTED on Bot: 3.22.117.16
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;8-wait-until-the-scan-is-finished-on-all-your-bots-the-grab-the-results&quot;&gt;8. Wait until the scan is finished on all your bots, the grab the results.&lt;/h4&gt;
+&lt;h4 id=&quot;8-wait-until-the-scan-is-finished-on-all-your-bots-then-grab-the-results&quot;&gt;8. Wait until the scan is finished on all your bots, then grab the results&lt;/h4&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 saturnV.py --check
 ***** Welcome to SaturnV *****
 16:51:03 | INFO | SSH private key found in ssh_key folder, the following key will be used: lcomi.pem
@@ -238,7 +237,7 @@ python3 saturnV.py --get-results
   &lt;p&gt;As of 2020, the Saturn V remains the tallest, heaviest, and most powerful rocket ever brought to operational status.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://ourplnt.com/wp-content/uploads/2018/07/Saturn-V-at-Johnson-Space-Center-NASA.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/2020-05-01-Massive-Hosts-Discovery-with-SaturnV/saturn.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 &lt;ul&gt;
@@ -272,6 +271,90 @@ python3 saturnV.py --get-results
         
         
         <category>NetworkPT</category>
+        
+      </item>
+    
+      <item>
+        <title>Introducing SOS_Proxy</title>
+        <description>&lt;p&gt;&lt;em&gt;In this post I will introduce a simple but effective tool that I developed in order to automate the invisible proxy technique and manage to intercept the HTTP traffic of any non proxy-aware device.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;invisible-proxy-technique-in-bites&quot;&gt;Invisible Proxy Technique in bites&lt;/h2&gt;
+
+&lt;p&gt;Is it possible to proxy a device that does not support this functionality? Sometimes, under particular circumstances, &lt;strong&gt;YES&lt;/strong&gt;. You can do that with &lt;a href=&quot;https://portswigger.net/burp&quot;&gt;Burp Suite&lt;/a&gt; and the invisible proxying technique explained in &lt;a href=&quot;https://portswigger.net/burp/documentation/desktop/tools/proxy/options/invisible&quot;&gt;Portswigger’s article&lt;/a&gt;. Following a brief summary of the steps that must be implemented in order to correctly intercept the HTTP traffic.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create a separate virtual network interface for each destination host.&lt;/li&gt;
+  &lt;li&gt;Create a separate Proxy listener for each interface (or two listeners if HTTP and HTTPS are both in use).&lt;/li&gt;
+  &lt;li&gt;Using your hosts file, redirect each destination hostname to a different network interface (i.e., to a different listener).&lt;/li&gt;
+  &lt;li&gt;Configure Burp’s listener on each interface to redirect all traffic to the IP address of the host whose traffic was redirected to it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;sos_proxy&quot;&gt;SOS_Proxy&lt;/h2&gt;
+&lt;p&gt;In order to automate the setup of multiple invisible proxies with Burp I’ve developed a simple Python script called SOS_Proxy. The main features of this tool and a simple step-by-step demo can be found insite the following &lt;a href=&quot;https://www.slideshare.net/LorenzoComi1/sosproxy-invisible-proxy-automation&quot;&gt;presentation&lt;/a&gt;. Otherwise, if you just want to check the source code, you can find it on &lt;a href=&quot;https://github.com/c0mix/SOS_Proxy&quot;&gt;github&lt;/a&gt;!&lt;/p&gt;
+
+&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/D7vbsbK5ku15PN&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Morover, the following video will show a real use case against an Android device.&lt;/p&gt;
+&lt;div&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/R9VAWpXcXAw&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;style&gt;
+	.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}	
+&lt;/style&gt;
+
+&lt;h2 id=&quot;esc-talk-record-in-italian&quot;&gt;ESC Talk Record (in Italian)&lt;/h2&gt;
+&lt;p&gt;Last summer i attended the &lt;a href=&quot;https://www.endsummercamp.org/index.php/End_Summer_Camp&quot;&gt;End Summer Camp (ESC)&lt;/a&gt; security conference in Venice (Italy) as a speaker in order to present this simple but useful tool. Below you can find the video recording of that talk.&lt;/p&gt;
+&lt;div class=&quot;video-container&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/OP1gJEn1gSY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;style&gt;
+	.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}	
+&lt;/style&gt;
+
+</description>
+        <pubDate>Mon, 30 Sep 2019 17:04:23 +0200</pubDate>
+        <link>http://localhost:4000/2019/Introducing-SOS_Proxy/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/Introducing-SOS_Proxy/</guid>
+        
+        <category>IoT</category>
+        
+        <category>PenTest</category>
+        
+        <category>Proxy</category>
+        
+        <category>Burp</category>
+        
+        <category>HTTP</category>
+        
+        <category>Python</category>
+        
+        
+        <category>PenTest</category>
         
       </item>
     

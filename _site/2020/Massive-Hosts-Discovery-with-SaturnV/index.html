@@ -54,7 +54,7 @@
   <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
   
-  <link rel="stylesheet" href="/css/main.css?1591459054691106051">
+  <link rel="stylesheet" href="/css/main.css?1613067318860646995">
   <link rel="canonical" href="http://localhost:4000/2020/Massive-Hosts-Discovery-with-SaturnV/">
   <link rel="alternate" type="application/rss+xml" title="Lorenzo Comi" href="/feed.xml">
 </head>
@@ -195,7 +195,7 @@
 
 <h2 id="execution-example">Execution Example</h2>
 
-<p>In order to provide a small DEMO of this tool I have used some facebook related ip subnets as targets since they are under bug bounty. The following steps will cover all the installation and execution process of the SaturnV tool providing a basic example of its behaviour.</p>
+<p>In order to provide a small DEMO of this tool I used some facebook related ip subnets as targets since they are under bug bounty. The following steps will cover all the installation and execution process of the SaturnV tool providing a basic example of its behaviour.</p>
 
 <h4 id="1-clone-the-project-from-github">1. Clone the project from github</h4>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/c0mix/SaturnV.git
@@ -252,8 +252,7 @@ needed!)
 
 <h4 id="3-edit-the-configuration-file-with-your-parameters-at-least-bots-and-npt_name-must-be-set">3. Edit the configuration file with your parameters (at least <code class="highlighter-rouge">bots</code> and <code class="highlighter-rouge">npt_name</code> must be set)</h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![](/images/2020-05-01-Massive-Hosts-Discovery-with-SaturnV/config.png)
-</code></pre></div></div>
+<p><img src="/images/2020-05-01-Massive-Hosts-Discovery-with-SaturnV/config.png" alt="" /></p>
 
 <h4 id="4-setup-your-ssh-key-in-this-case-im-using-aws-bots-so-ive-put-my-private-key-inside-ssh_key-folder">4. Setup your SSH Key (in this case I’m using AWS bots so I’ve put my private key inside ssh_key folder)</h4>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -l ssh_key/
@@ -314,7 +313,7 @@ cat target_subnets.txt
 31.13.92.240/28
 </code></pre></div></div>
 
-<h4 id="7-prepare-and-launch-masscan-test">7. Prepare and launch masscan test</h4>
+<h4 id="7-prepare-and-execute-masscan-test">7. Prepare and execute masscan test</h4>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 saturnV.py --masscan-script --masscan-run
 ***** Welcome to SaturnV *****
 15:08:52 | INFO | SSH private key found in ssh_key folder, the following key will be used: lcomi.pem
@@ -332,7 +331,7 @@ python3 saturnV.py --check
 15:09:04 | WARNING | masscan execution STARTED on Bot: 3.22.117.16
 </code></pre></div></div>
 
-<h4 id="8-wait-until-the-scan-is-finished-on-all-your-bots-the-grab-the-results">8. Wait until the scan is finished on all your bots, the grab the results.</h4>
+<h4 id="8-wait-until-the-scan-is-finished-on-all-your-bots-then-grab-the-results">8. Wait until the scan is finished on all your bots, then grab the results</h4>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 saturnV.py --check
 ***** Welcome to SaturnV *****
 16:51:03 | INFO | SSH private key found in ssh_key folder, the following key will be used: lcomi.pem
@@ -408,7 +407,7 @@ python3 saturnV.py --get-results
   <p>As of 2020, the Saturn V remains the tallest, heaviest, and most powerful rocket ever brought to operational status.</p>
 </blockquote>
 
-<p><img src="https://ourplnt.com/wp-content/uploads/2018/07/Saturn-V-at-Johnson-Space-Center-NASA.jpg" alt="" /></p>
+<p><img src="/images/2020-05-01-Massive-Hosts-Discovery-with-SaturnV/saturn.jpg" alt="" /></p>
 
 <h2 id="references">References</h2>
 <ul>
@@ -433,11 +432,11 @@ python3 saturnV.py --get-results
       </div>
 
       <footer class="footer">
-  <span class="footer__copyright">&copy; 2020 Lorenzo Comi. All rights reserved.</span>
+  <span class="footer__copyright">&copy; 2021 Lorenzo Comi. All rights reserved.</span>
 </footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/js/main.js?1591459054691106051"></script>
+<script type="text/javascript" src="/js/main.js?1613067318860646995"></script>
 
 
     </div>
