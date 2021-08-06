@@ -81,7 +81,7 @@ The final exploit is a simple python script that, for each payload, obtains a ne
 
 
 ### Final notes
-In order to exploit this vulnerability an attacker needs to be logged inside the web application. However, in a real world scenario, it is possible to chain [CVE-2018-8898][CVE-2018-8898] (authentication bypass vulnerability discoverd by [Giulio Comi][giulio]) to attempt to execute this exploit as an unauthenticated user. Please note that my exploit already takes advantage of this vulnerability as shown in the video. 
+In order to exploit this vulnerability an attacker needs to be logged inside the web application. However, in a real world scenario, it is possible to chain [CVE-2018-8898][CVE-2018-8898] (authentication bypass vulnerability discovered by [Giulio Comi][giulio]) to attempt to execute this exploit as an unauthenticated user. Please note that my exploit already takes advantage of this vulnerability as shown in the video. 
 
 <br>
 
